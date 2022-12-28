@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exr3</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const txt = '{ "name": "ISRO", "age": 35, "role": "Scientist" }'
+        var object = JSON.parse(txt);
+        console.log(object);
+        let array=[];
+        for(let key in object){
+            array.push([key,object[key]]);
+            
+        }
+
+        console.log(array);
+        document.getElementById("demo").innerHTML+=JSON.stringify(array)+"<br>";
+        
+    </script>
+</body>
+
+</html>
